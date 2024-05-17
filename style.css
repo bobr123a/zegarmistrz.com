@@ -1,0 +1,32 @@
+#aktualnyczas{
+    text-align: right;
+}
+#datostat{
+    text-align: left;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  color: black;
+}
+nav a:hover{
+  color: gray;
+}
+ul{
+  list-style: none outside;
+}
+li{
+  display: inline;
+}
+header{
+  background-color: rgb(100, 86, 22);
+}
