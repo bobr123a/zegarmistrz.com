@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">'
+  <link rel="shortcut icon" href="ikona.png" type="image/x-icon" >
+  <script src="aplikacje.js"></script>
+</head>
+<body onload="aktczas()">
+  <header>
+    <h2>Freaky o'clock</h2>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">O nas</a></li>
+        <li><a href="wyposazenie.html">Wyposażenie</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <main>
+    <form method="get">
+        <p>Imię: <input type="text" id="imie" name="imie" required></p>
+        <p>Nazwisko: <input type="text" id="nazwisko" name="nazwisko" required></p>
+        <p>Numer telefonu: <input type="number" name="numer" id="numer" required></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Wiadomość: <textarea name="wiadomosc" id="wiadomosc" rows="4" required></textarea></p>
+        <p><button type="submit">Wyślij</button></p>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <a id="datostat"></a>
+      <a id="aktualnyczas"></a>
+    </div>
+  </footer>
+  
+</body>
+</html>

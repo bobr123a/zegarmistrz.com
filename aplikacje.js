@@ -22,7 +22,17 @@ function datostatniej(){
     const datas = document.lastModified;
     document.getElementById('datostat').innerHTML="Data ostatniej modyfikacji strony: "+datas;
 }
+var zmienna=0;
+var tablica=new Array("zdjecie1.png","zdjecie2.png")
+function slider(){
+    zmienna++
+    if (zmienna=tablica.length)
+    zmienna=0;
+    document.getElementById("slider").src=tablica[zmienna]
+    setTimeout("slider()",2000)
+}
 document.addEventListener('DOMContentLoaded', function() {
   aktczas();
   datostatniej();
+  slider();
 });
