@@ -36,3 +36,31 @@ document.addEventListener('DOMContentLoaded', function() {
   datostatniej();
   slider();
 });
+
+function showDetails(day) {
+  const detailsText = {
+    'Poniedziałek': 'Godziny otwarcia w poniedziałek: 9:00 - 18:00. Zapraszamy!',
+    'Wtorek': 'Godziny otwarcia we wtorek: 9:00 - 18:00. Zapraszamy!',
+    'Środa': 'Godziny otwarcia w środę: 9:00 - 18:00. Zapraszamy!',
+    'Czwartek': 'Godziny otwarcia w czwartek: 9:00 - 18:00. Zapraszamy!',
+    'Piątek': 'Godziny otwarcia w piątek: 9:00 - 18:00. Zapraszamy!',
+    'Sobota': 'Godziny otwarcia w sobotę: 10:00 - 16:00. Zapraszamy!',
+    'Niedziela': 'Niedziela: Zamknięte.'
+  };
+  document.getElementById('details-text').innerText = detailsText[day];
+  document.getElementById('details').style.display = 'block';
+};
+
+function initMap() {
+    
+    var location = { lat: 52.229675, lng: 21.012230 }; 
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: location
+    });
+    var marker = new google.maps.marker.AdvancedMarkerElement({  
+      position: location,
+      map: map,
+      title: 'Freaky O\'Clock'
+    });
+  }

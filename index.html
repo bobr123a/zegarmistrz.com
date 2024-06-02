@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="shortcut icon" href="ikona.png" type="image/x-icon" >
+  <title>Freaky O'Clock - O nas</title>
+  <link rel="shortcut icon" href="ikona.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <script src="aplikacje.js"></script>
 </head>
 <body onload="aktczas()">
   <header>
-    
     <img src="tytul.png" alt="main_foto">
     <nav>
       <ul>
@@ -20,20 +19,110 @@
         <li><a href="formularz.html">Formularz</a></li>
       </ul>
     </nav>
-    
   </header>
   <main>
     <section id="onas">
-      <h3>O nas</h3>
-      <p>
-        Witaj w naszym sklepie zegarmistrzowskim! Jesteśmy firmą z wieloletnią tradycją i pasją do precyzyjnych zegarków. Nasza oferta obejmuje szeroką gamę zegarków, od klasycznych po nowoczesne, a także usługi naprawy i konserwacji.
-      </p>
-      <p>
-        Nasz zespół składa się z wykwalifikowanych zegarmistrzów, którzy z dbałością o każdy detal, zadbają o Twój zegarek. Zapewniamy najwyższą jakość usług oraz indywidualne podejście do każdego klienta.
-      </p>
-      <p>
-        Odwiedź nasz sklep, aby zobaczyć naszą kolekcję zegarków lub skorzystać z naszych usług naprawczych. Jesteśmy tutaj, aby spełnić wszystkie Twoje potrzeby związane z zegarkami.
-      </p>
+      <h1>O nas</h1>
+      <div class="section">
+        <p>Witamy w sklepie zegarmistrzowskim Freaky O'Clock!</p>
+        <p>Freaky O'Clock to miejsce, gdzie tradycja spotyka nowoczesność, a pasja do precyzyjnych zegarków jest widoczna w każdym szczególe. Jesteśmy firmą z wieloletnim doświadczeniem w branży zegarmistrzowskiej, a nasza misja to dostarczanie najwyższej jakości zegarków oraz usług naprawczych.</p>
+      </div>
+      <div class="section">
+        <h3>Nasza oferta</h3>
+        <p><strong>Szeroka gama zegarków:</strong></p>
+        <ul>
+          <li><strong>Klasyczne:</strong> Eleganckie zegarki, które nigdy nie wychodzą z mody, idealne na każdą okazję.</li>
+          <li><strong>Nowoczesne:</strong> Zegarki z najnowszymi funkcjami technologicznymi, dla tych, którzy cenią innowacyjność.</li>
+          <li><strong>Luksusowe:</strong> Ekskluzywne modele dla najbardziej wymagających klientów.</li>
+          <li><strong>Sportowe:</strong> Wytrzymałe zegarki dla aktywnych osób, które potrzebują niezawodności.</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>Usługi naprawy i konserwacji</h3>
+        <p>Nasz zespół składa się z wykwalifikowanych zegarmistrzów, którzy z dbałością o każdy detal zadbają o Twój zegarek. Oferujemy:</p>
+        <ul>
+          <li><strong>Naprawy mechaniczne:</strong> Od drobnych poprawek po kompleksowe renowacje.</li>
+          <li><strong>Konserwacja:</strong> Regularne przeglądy, aby Twój zegarek działał bez zarzutu przez wiele lat.</li>
+          <li><strong>Personalizacja:</strong> Dostosowanie zegarka do Twoich indywidualnych potrzeb i stylu.</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>Dlaczego warto wybrać Freaky O'Clock?</h3>
+        <p><strong>Najwyższa jakość usług:</strong> Każdy zegarek, który trafia do naszego sklepu, jest traktowany z najwyższą starannością. Dbamy o to, aby każde zlecenie było wykonane perfekcyjnie.</p>
+        <p><strong>Indywidualne podejście:</strong> Rozumiemy, że każdy klient ma swoje unikalne potrzeby i oczekiwania. Dlatego zapewniamy indywidualne podejście, aby sprostać wszystkim Twoim wymaganiom.</p>
+        <p><strong>Pasja do zegarków:</strong> Zegarki to nasza pasja, co widoczne jest w każdym aspekcie naszej pracy. Od wyboru kolekcji, przez naprawy, po obsługę klienta – wszystko robimy z miłością do zegarków.</p>
+      </div>
+      <div class="section contact">
+        <h3>Odwiedź nas</h3>
+        <p>Zapraszamy do naszego sklepu, gdzie możesz osobiście zobaczyć naszą wyjątkową kolekcję zegarków. Nasi eksperci z przyjemnością doradzą i pomogą wybrać idealny zegarek dla Ciebie.</p>
+        <script src="https://maps.googleapis.com/maps/api/js?key=TWOJ_KLUCZ_API&callback=initMap" defer></script>
+        <div class="map-container">
+          <div class="map-header">
+            <h1>Lokalizacja Freaky O'Clock</h1>
+          </div>
+          <div id="map"></div>
+          <div class="detale" id="detale">
+            <h2>Szczegóły Dnia</h2>
+            <p id="map-text"></p>
+          </div>
+        </div>      
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <h1>Godziny Otwarcia Freaky O'Clock</h1>
+          </div>
+          <div class="calendar">
+            <div class="day" onclick="showDetails('Poniedziałek')">
+              <div class="day-name">Poniedziałek</div>
+              <div class="day-date">1</div>
+              <div class="hours">9:00 - 18:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Wtorek')">
+              <div class="day-name">Wtorek</div>
+              <div class="day-date">2</div>
+              <div class="hours">9:00 - 18:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Środa')">
+              <div class="day-name">Środa</div>
+              <div class="day-date">3</div>
+              <div class="hours">9:00 - 18:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Czwartek')">
+              <div class="day-name">Czwartek</div>
+              <div class="day-date">4</div>
+              <div class="hours">9:00 - 18:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Piątek')">
+              <div class="day-name">Piątek</div>
+              <div class="day-date">5</div>
+              <div class="hours">9:00 - 18:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Sobota')">
+              <div class="day-name">Sobota</div>
+              <div class="day-date">6</div>
+              <div class="hours">10:00 - 16:00</div>
+            </div>
+            <div class="day" onclick="showDetails('Niedziela')">
+              <div class="day-name">Niedziela</div>
+              <div class="day-date">7</div>
+              <div class="hours">Zamknięte</div>
+            </div>
+          </div>
+          <div class="details" id="details">
+            <h2>Szczegóły Dnia</h2>
+            <p id="details-text"></p>
+          </div>
+        </div>
+        <p><strong>Kontakt:</strong><br>Telefon: +48 123 456 789<br>Email: <a href="mailto:kontakt@freakyoclock.pl">kontakt@freakyoclock.pl</a></p>
+      </div>
+      <div class="section contact">
+        <h3>Dołącz do naszej społeczności</h3>
+        <p>Śledź nas na mediach społecznościowych, aby być na bieżąco z najnowszymi trendami, promocjami i wydarzeniami:</p>
+        <p>
+          <a href="https://www.facebook.com/freakyoclock" target="_blank">Facebook</a> | 
+          <a href="https://www.instagram.com/freakyoclock" target="_blank">Instagram</a> | 
+          <a href="https://www.twitter.com/freakyoclock" target="_blank">Twitter</a>
+        </p>
+      </div>
     </section>
     <section>
       <img src="" id="slider">
@@ -45,6 +134,5 @@
       <a id="aktualnyczas"></a>
     </div>
   </footer>
-  
 </body>
 </html>
