@@ -10,7 +10,8 @@
 </head>
 <body onload="aktczas()">
   <header>
-    <img src="tytul.png" alt="main_foto">
+    <div id="img-header"><img src="tytul.png" alt="main_foto"></div>
+    
     <nav>
       <ul>
         <li><a href="index.html">O nas</a></li>
@@ -23,9 +24,16 @@
   <main>
     <section id="onas">
       <h1>O nas</h1>
-      <div class="section">
-        <p>Witamy w sklepie zegarmistrzowskim Freaky O'Clock!</p>
-        <p>Freaky O'Clock to miejsce, gdzie tradycja spotyka nowoczesność, a pasja do precyzyjnych zegarków jest widoczna w każdym szczególe. Jesteśmy firmą z wieloletnim doświadczeniem w branży zegarmistrzowskiej, a nasza misja to dostarczanie najwyższej jakości zegarków oraz usług naprawczych.</p>
+      <div class="section-onas">
+        <div class="jeden-onas">
+          <p>Witamy w sklepie zegarmistrzowskim Freaky O'Clock!</p>
+          <p>Freaky O'Clock to miejsce, gdzie tradycja spotyka nowoczesność, a pasja do precyzyjnych zegarków jest widoczna w każdym szczególe. Jesteśmy firmą z wieloletnim doświadczeniem w branży zegarmistrzowskiej, a nasza misja to dostarczanie najwyższej jakości zegarków oraz usług naprawczych.</p>
+        </div>
+        <div class="dwa-onas">
+          <img src="ONAS/1.jpg" alt="obraz" id="obraz">
+       </div>
+        </div>
+        
       </div>
       <div class="section">
         <h3>Nasza oferta</h3>
@@ -52,20 +60,7 @@
         <p><strong>Indywidualne podejście:</strong> Rozumiemy, że każdy klient ma swoje unikalne potrzeby i oczekiwania. Dlatego zapewniamy indywidualne podejście, aby sprostać wszystkim Twoim wymaganiom.</p>
         <p><strong>Pasja do zegarków:</strong> Zegarki to nasza pasja, co widoczne jest w każdym aspekcie naszej pracy. Od wyboru kolekcji, przez naprawy, po obsługę klienta – wszystko robimy z miłością do zegarków.</p>
       </div>
-      <div class="section contact">
-        <h3>Odwiedź nas</h3>
-        <p>Zapraszamy do naszego sklepu, gdzie możesz osobiście zobaczyć naszą wyjątkową kolekcję zegarków. Nasi eksperci z przyjemnością doradzą i pomogą wybrać idealny zegarek dla Ciebie.</p>
-        <script src="https://maps.googleapis.com/maps/api/js?key=TWOJ_KLUCZ_API&callback=initMap" defer></script>
-        <div class="map-container">
-          <div class="map-header">
-            <h1>Lokalizacja Freaky O'Clock</h1>
-          </div>
-          <div id="map"></div>
-          <div class="detale" id="detale">
-            <h2>Szczegóły Dnia</h2>
-            <p id="map-text"></p>
-          </div>
-        </div>      
+      <p>Odwiedz nas na : <a href="https://search.app.goo.gl/CSWsuDZ" >Krupnicza 18, Kraków</a></p>
         <div class="calendar-container">
           <div class="calendar-header">
             <h1>Godziny Otwarcia Freaky O'Clock</h1>
@@ -123,9 +118,6 @@
           <a href="https://www.twitter.com/freakyoclock" target="_blank">Twitter</a>
         </p>
       </div>
-    </section>
-    <section>
-      <img src="" id="slider">
     </section>
   </main>
   <footer>

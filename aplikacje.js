@@ -51,16 +51,14 @@ function showDetails(day) {
   document.getElementById('details').style.display = 'block';
 };
 
-function initMap() {
-    
-    var location = { lat: 52.229675, lng: 21.012230 }; 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: location
-    });
-    var marker = new google.maps.marker.AdvancedMarkerElement({  
-      position: location,
-      map: map,
-      title: 'Freaky O\'Clock'
-    });
-  }
+var currentImageIndex = 0;
+var tab = ['ONAS/1.jpg', 'ONAS/2.jpg'];
+
+function zmianaobraz() {
+  document.getElementById('obraz').src = tab[currentImageIndex];
+  currentImageIndex = (currentImageIndex + 1) % tab.length;
+}
+
+setInterval(zmianaobraz, 5000);
+
+
