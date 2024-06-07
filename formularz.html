@@ -30,6 +30,31 @@
         <p>Email: <input type="email" name="email" id="email" required></p>
         <p>Wiadomość: <textarea name="wiadomosc" id="wiadomosc" rows="4" required></textarea></p>
         <p><button type="submit">Wyślij</button></p>
+        <p><h2>Przybliżone koszty</h2></p>
+
+    </form>
+    <form>
+      <label for="opcje">Wybierz opcję:</label>
+      <select id="opcje" name="opcje" onchange="koszty()">
+          <option value="Naprawa Zegarka">Naprawa Zegarka</option>
+          <option value="Renowacja Zegarka">Renowacja Zegarka</option>
+          <option value="Zakup Nowego Zegarka">Zakup Nowego Zegarka</option>
+          <option value="Akcesoria (pudełko oraz zestaw do naprawy)">Akcesoria (pudełko oraz zestaw do naprawy)</option>
+          <option value="Koperta podarunkowa 50zl">Koperta podarunkowa 50zl</option>
+          <option value="Koperta podarunkowa 100zl">Koperta podarunkowa 100zl</option>
+          <option value="Koperta podarunkowa 200zl">Koperta podarunkowa 200zl</option>
+          <option value="Koperta podarunkowa 500zl">Koperta podarunkowa 500zl</option>
+      </select>
+      
+      <br><br>
+
+      <label for="wiekwik">Podaj swój wiek:</label>
+      <input type="number" id="wiekwik" name="wiekwik" onchange="koszty()">
+
+      <br><br>
+
+      <label>Koszt: <span id="cenacn">0.00</span> PLN</label>
+
   </main>
   <footer>
     <div class="footer-container">

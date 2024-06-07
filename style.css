@@ -101,14 +101,14 @@ form {
   margin: 20px auto;
 }
 
-form p {
+form p{
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bolder;
   color: #4e342e;
 }
 
-form input, form textarea, form button {
+form input, form textarea, form button,form select,form option {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -131,6 +131,10 @@ form button {
 
 form button:hover {
   background-color: #6d4c41;
+}
+
+form h2{
+  text-align: center;
 }
 
 #onas {

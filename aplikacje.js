@@ -60,5 +60,38 @@ function zmianaobraz() {
 }
 
 setInterval(zmianaobraz, 5000);
+function koszty() {
+  var suma = 0;
+  var cojest = document.getElementById('opcje').value;
+  if(cojest == "Naprawa Zegarka") {
+      suma = 200;
+  }
+  if(cojest == "Renowacja Zegarka") {
+      suma = 350;
+  }
+  if(cojest == "Zakup Nowego Zegarka") {
+      suma = 500;
+  }
+  if(cojest == "Akcesoria (pudełko oraz zestaw do naprawy)") {
+      suma = 300;
+  }
+  if(cojest == "Koperta podarunkowa 50zl") {
+      suma = 50;
+  }
+  if(cojest == "Koperta podarunkowa 100zl") {
+      suma = 100;
+  }
+  if(cojest == "Koperta podarunkowa 200zl") {
+      suma = 200;
+  }
+  if(cojest == "Koperta podarunkowa 500zl") {
+      suma = 500;
+  }
+  
+  var wiek = parseInt(document.getElementById('wiekwik').value);
+  if(wiek < 18) {
+      suma = suma * 0.7;
+  }
 
-
+  document.getElementById('cenacn').innerHTML = suma.toFixed(2);
+}
